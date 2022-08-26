@@ -12,6 +12,7 @@ void Dec2RadixI(int decValue, int radValue)
     char rad[100]  ;
     dev1 = decValue ;
     lg   = log(decValue)/log(radValue);
+    /* adds one to lg if lg is a whole number*/
     if (lg == ceil(lg)){
         lg   = lg + 1;
     }else{
@@ -20,7 +21,7 @@ void Dec2RadixI(int decValue, int radValue)
     j = lg;
 
    /*the for loop adds successive modules of the decimal input
-    devived by the radix input*/
+    devided by the radix input*/
     for(i == 0; i<=lg; i++)
     {
         dev = dev1%radValue;
@@ -55,14 +56,14 @@ void main()
     decValue = 0;
     while (1){
         printf("\nEnter a decimal number: ");
-        scanf("%d",&decValue);
+        scanf("%d",&decValue);                                       //takes in decimal and stores it at &decValue
         if (decValue < 0){
             printf("EXIT");
             break;
             }
         printf("The decimal number you have entered is %d",decValue);
         printf("\nEnter a radix for the converter between 2 and 16: ");
-        scanf("%d",&radValue);
+        scanf("%d",&radValue);                                           //takes in radix and stores it at &radValue
         printf("The radix you have entered is %d", radValue);
         lg  = log(decValue)/log(2);  //calculates the number of bits
         printf("\nThe log2 of the number is %.2f",lg);
