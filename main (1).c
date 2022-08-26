@@ -64,8 +64,8 @@ void main()
         printf("\nEnter a radix for the converter between 2 and 16: ");
         scanf("%d",&radValue);
         printf("The radix you have entered is %d", radValue);
-        lg  = log(decValue)/log(radValue);  //calculates the number of bits
-        printf("\nThe log%d of the number is %.2f",radValue,lg);
+        lg  = log(decValue)/log(2);  //calculates the number of bits
+        printf("\nThe log of the number is %.2f",lg);
         printf("\nThe integer result of the number divided by %d is %d",radValue,(decValue/radValue));
         printf("\nThe remainder is %d", decValue%radValue);
         Dec2RadixI(decValue,radValue);
