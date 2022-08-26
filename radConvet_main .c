@@ -4,6 +4,7 @@
 #define AUTHOR "DUMSANE NKOSI"
 #define YEAR 2022
 
+// THIS IS NOT THE REAL CODE THE REAL CODE IS IN THE OTHER REPOSITORY CALLED MAIN(1).C
 
 void Dec2RadixI(int decValue, int radValue)
 {
