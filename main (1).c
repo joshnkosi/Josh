@@ -65,7 +65,7 @@ void main()
         scanf("%d",&radValue);
         printf("The radix you have entered is %d", radValue);
         lg  = log(decValue)/log(2);  //calculates the number of bits
-        printf("\nThe log of the number is %.2f",lg);
+        printf("\nThe log2 of the number is %.2f",lg);
         printf("\nThe integer result of the number divided by %d is %d",radValue,(decValue/radValue));
         printf("\nThe remainder is %d", decValue%radValue);
         Dec2RadixI(decValue,radValue);
